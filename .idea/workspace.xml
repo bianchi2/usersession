@@ -16,6 +16,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1QzyuYDo01GLaKz0BfPr3B7hxSo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
@@ -76,6 +77,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/journaldev/servlet/session/LoginServlet.java</url>
           <line>32</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/journaldev/servlet/session/LoginServlet.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

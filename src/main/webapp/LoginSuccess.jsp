@@ -7,10 +7,18 @@
 <title>Login Success Page</title>
 </head>
 <body>
+Obj = <%=session.getAttribute("obj")%>
+
+<%
+String [] obj = (String [])session.getAttribute("obj");
+if (obj == null) {
+  obj = new String[1024 * 1024];
+  session.setAttribute("obj", obj);
+}
+%>
 <%
 //allow access only if session exists
 String user = null;
-request.setAttribute("customobject", "customvalue");
 if(session.getAttribute("user") == null){
 	response.sendRedirect("login.html");
 }else user = (String) session.getAttribute("user");

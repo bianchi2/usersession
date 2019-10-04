@@ -32,6 +32,9 @@ public class LoginServlet extends HttpServlet {
 		if(userID.equals(user) && password.equals(pwd)){
 			HttpSession session = request.getSession();
 			session.setAttribute("user", "testUser");
+//			char[] s = new char[1024 * 1000];
+//			String str = String.copyValueOf(s);
+//			session.setAttribute("string", str);
 			//setting session to expiry in 30 mins
 			session.setMaxInactiveInterval(30*60);
 			Cookie userName = new Cookie("user", user);
@@ -39,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			response.addCookie(userName);
 			System.out.println("User="+session.getAttribute("user"));
 			Cookie[] cookies = request.getCookies();
-			System.out.println((String)request.getAttribute("customobject"));
+//			System.out.println((String)session.getAttribute("string"));
 			if (cookies!= null) {
 				for(Cookie cookie : cookies){
 					if(cookie.getName().equals("JSESSIONID")){
